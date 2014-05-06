@@ -3,44 +3,117 @@
   <Configs name="configs">
     <Config>Configs\Default</Config>
   </Configs>
+  <datafiles number="1" name="datafiles"/>
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
-    <sprite>sprites\walk_right</sprite>
-    <sprite>sprites\walk_left</sprite>
-    <sprite>sprites\fall_right</sprite>
-    <sprite>sprites\fall_left</sprite>
-    <sprite>sprites\jump_left</sprite>
-    <sprite>sprites\jump_right</sprite>
+    <sprites name="Animations">
+      <sprites name="Actions">
+        <sprite>sprites\sprSlashBox</sprite>
+        <sprite>sprites\sprComboBox1</sprite>
+        <sprite>sprites\sprComboBox2</sprite>
+        <sprite>sprites\sprComboBox3</sprite>
+      </sprites>
+      <sprites name="ScreenAnimations">
+        <sprite>sprites\sprFog1</sprite>
+        <sprite>sprites\sprDustFX1</sprite>
+      </sprites>
+    </sprites>
+    <sprites name="Materials">
+      <sprite>sprites\sprMainMenu</sprite>
+      <sprite>sprites\sprPointer</sprite>
+      <sprites name="extras">
+        <sprite>sprites\UpperLeg1</sprite>
+        <sprite>sprites\LowerLeg1</sprite>
+      </sprites>
+    </sprites>
+    <sprites name="Characters">
+      <sprites name="Slime">
+        <sprite>sprites\sprSlime</sprite>
+        <sprite>sprites\sprSlimeAttack</sprite>
+      </sprites>
+      <sprites name="Player">
+        <sprite>sprites\sprChar1</sprite>
+        <sprite>sprites\sprHeroWalk</sprite>
+        <sprite>sprites\sprHeroStrike</sprite>
+        <sprite>sprites\sprHeroIdle</sprite>
+      </sprites>
+      <sprite>sprites\sprTestDummy</sprite>
+    </sprites>
+    <sprites name="Surfaces">
+      <sprite>sprites\sprSuperSolid</sprite>
+      <sprite>sprites\sprWall</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
-    <background>background\background2</background>
+    <background>background\filter1</background>
+    <background>background\filter2</background>
+    <background>background\filter3</background>
+    <background>background\filter4</background>
+    <background>background\hardSurface</background>
   </backgrounds>
-  <paths name="paths">
-    <path>paths\path0</path>
-    <path>paths\path1</path>
-    <path>paths\path2</path>
-  </paths>
+  <paths name="paths"/>
   <scripts name="scripts">
-    <script>scripts\CreateCollisionMap.gml</script>
-    <script>scripts\GetCollision.gml</script>
-    <scripts name="Player">
-      <script>scripts\ProcessPlayer.gml</script>
-      <script>scripts\InitialisePlayer.gml</script>
+    <script>scripts\public.gml</script>
+    <scripts name="Movements/Collisions/Actions">
+      <script>scripts\actions.gml</script>
+      <script>scripts\sideMotion.gml</script>
+      <script>scripts\knock_back.gml</script>
     </scripts>
-    <script>scripts\AddMultiple.gml</script>
-    <script>scripts\AttachMultiple.gml</script>
+    <scripts name="EnemiesAI">
+      <script>scripts\SlimeAI.gml</script>
+    </scripts>
   </scripts>
   <fonts name="fonts">
-    <font>fonts\font0</font>
+    <font>fonts\bigFont</font>
+    <font>fonts\critFont</font>
   </fonts>
   <objects name="objects">
-    <object>objects\player</object>
-    <object>objects\baddie</object>
-    <object>objects\minime</object>
+    <objects name="Hitboxes">
+      <object>objects\objSlashBoxParent</object>
+      <object>objects\objSlashBox</object>
+      <object>objects\objSlashBox2</object>
+      <object>objects\objSlashBox3</object>
+    </objects>
+    <objects name="Materials">
+      <objects name="Menus">
+        <object>objects\objMainMenu</object>
+        <object>objects\objPointer</object>
+      </objects>
+      <objects name="OnScreenText">
+        <objects name="DamageTexts">
+          <object>objects\objDrawFade</object>
+          <object>objects\objDrawFade2</object>
+          <object>objects\objDrawFade3</object>
+          <object>objects\objDrawFade4</object>
+          <object>objects\objDrawFade5</object>
+        </objects>
+        <objects name="BattleTexts">
+          <object>objects\objCriticalText</object>
+        </objects>
+      </objects>
+    </objects>
+    <objects name="Characters">
+      <object>objects\objPlayer</object>
+      <object>objects\objTestDummy</object>
+      <object>objects\objEnemyParent</object>
+      <object>objects\objSlime</object>
+      <object>objects\objHero</object>
+    </objects>
+    <objects name="Surfaces">
+      <object>objects\objSolidParent</object>
+      <object>objects\objBlock</object>
+      <object>objects\objSpinBlock</object>
+      <object>objects\objMovePlatform</object>
+      <object>objects\objSuperSolid</object>
+    </objects>
+    <objects name="Particles">
+      <object>objects\objDustFX1</object>
+    </objects>
   </objects>
   <rooms name="rooms">
-    <room>rooms\room0</room>
+    <room>rooms\mainMenu</room>
+    <room>rooms\roomTest</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
@@ -48,6 +121,6 @@
   <TutorialState>
     <IsTutorial>0</IsTutorial>
     <TutorialName></TutorialName>
-    <TutorialPage>0</TutorialPage>
+    <TutorialPage>7</TutorialPage>
   </TutorialState>
 </assets>
