@@ -34,6 +34,9 @@
     <option_android_icon_36>Configs\Default\android\icons\icon36.png</option_android_icon_36>
     <option_android_icon_48>Configs\Default\android\icons\icon48.png</option_android_icon_48>
     <option_android_icon_72>Configs\Default\android\icons\icon72.png</option_android_icon_72>
+    <option_android_inmobi_enable>false</option_android_inmobi_enable>
+    <option_android_inmobi_id></option_android_inmobi_id>
+    <option_android_inmobi_test_enable>false</option_android_inmobi_test_enable>
     <option_android_install_location>auto</option_android_install_location>
     <option_android_interpolate>-1</option_android_interpolate>
     <option_android_licensing_enable>0</option_android_licensing_enable>
@@ -130,6 +133,9 @@
     <option_ios_icon_57>Configs\Default\ios\icons\icon57.png</option_ios_icon_57>
     <option_ios_icon_72>Configs\Default\ios\icons\icon72.png</option_ios_icon_72>
     <option_ios_icon_76>Configs\Default\ios\icons\icon76.png</option_ios_icon_76>
+    <option_ios_inmobi_enable>false</option_ios_inmobi_enable>
+    <option_ios_inmobi_id></option_ios_inmobi_id>
+    <option_ios_inmobi_test_enable>false</option_ios_inmobi_test_enable>
     <option_ios_interpolate>-1</option_ios_interpolate>
     <option_ios_ipad_retina_splash_png>Configs\Default\ios\iPadRetinasplash.png</option_ios_ipad_retina_splash_png>
     <option_ios_ipad_splash_png>Configs\Default\ios\iPadsplash.png</option_ios_ipad_splash_png>
