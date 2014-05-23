@@ -41,10 +41,17 @@
       <sprite>sprites\sprTestDummy</sprite>
     </sprites>
     <sprites name="Surfaces">
-      <sprite>sprites\sprSuperSolid</sprite>
-      <sprite>sprites\sprWall</sprite>
-      <sprite>sprites\sprGrass</sprite>
-      <sprite>sprites\sprDirt</sprite>
+      <sprites name="level1">
+        <sprite>sprites\sprGrass1</sprite>
+        <sprite>sprites\sprGrass2</sprite>
+        <sprite>sprites\sprGrass3</sprite>
+        <sprite>sprites\sprGrass4</sprite>
+        <sprite>sprites\sprGrassSlopeLeft</sprite>
+        <sprite>sprites\sprGrassSlopeRight</sprite>
+        <sprite>sprites\sprDirt1</sprite>
+        <sprite>sprites\sprGrassLong</sprite>
+        <sprite>sprites\sprDirt2</sprite>
+      </sprites>
     </sprites>
     <sprites name="Zones">
       <sprite>sprites\sprWarp</sprite>
@@ -61,6 +68,7 @@
     <background>background\filter3</background>
     <background>background\filter4</background>
     <background>background\hardSurface</background>
+    <background>background\room1background</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -116,8 +124,6 @@
       <object>objects\objSpinBlock</object>
       <object>objects\objMovePlatform</object>
       <object>objects\objSuperSolid</object>
-      <object>objects\grass</object>
-      <object>objects\dirt</object>
     </objects>
     <objects name="Particles">
       <object>objects\objDustFX1</object>
@@ -129,6 +135,17 @@
       <object>objects\objSpike</object>
       <object>objects\objWarp</object>
       <object>objects\objEnd</object>
+    </objects>
+    <objects name="level_1_objects">
+      <object>objects\objGrass1</object>
+      <object>objects\objGrass2</object>
+      <object>objects\objGrass3</object>
+      <object>objects\objGrass4</object>
+      <object>objects\objGrassSlopeLeft</object>
+      <object>objects\objGrassSlopeRight</object>
+      <object>objects\objDirt1</object>
+      <object>objects\objSpriteLong</object>
+      <object>objects\objDirt2</object>
     </objects>
   </objects>
   <rooms name="rooms">
